@@ -1,5 +1,5 @@
 # todo
-Tutorial for http://midnightcodeschool.com
+Tutorial for https://midnightcodeschool.com
 - NextJS
 - ReactJS
 - Mongo
