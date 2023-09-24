@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { newTodo } from "./actions"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { SubmitBtn } from "./submit-btn.component"
 
 export const NewTodoCard = () => {
   return (
@@ -11,7 +11,7 @@ export const NewTodoCard = () => {
         <form action={newTodo} className="flex flex-col space-y-2">
           <Input name="title" placeholder="title"/>
           <Input name="content" placeholder="content"/>
-          <Button>Submit</Button>
+          <SubmitBtn/>
         </form>
       </CardContent>
     </Card>

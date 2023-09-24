@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
 import { markDone } from "./actions"
+import { SubmitBtn } from "./submit-btn.component"
 
 interface IDoneBtn {
   todoId: string
@@ -17,9 +17,7 @@ export const DoneBtn = (props: IDoneBtn) => {
         name="todoId"
         value={props.todoId}
       />
-      <Button>
-        Done
-      </Button>
+      <SubmitBtn/>
     </form>
   )
 }
