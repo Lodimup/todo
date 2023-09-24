@@ -4,6 +4,6 @@ export async function getDb(): Promise<Db>{
   const uri = process.env['MONGO_URI'] ?? 'mongodb://localhost:27017/mydatabase';
   const client = new MongoClient(uri);
   await client.connect();
-  const database = client.db('mydatabase');
+  const database = client.db('tutorial-todo');
   return database;
 }
