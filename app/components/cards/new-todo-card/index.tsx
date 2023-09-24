@@ -5,7 +5,7 @@ import { SubmitBtn } from "./submit-btn.component"
 
 export const NewTodoCard = () => {
   return (
-    <Card className="w-[300px] h-[300px]">
+    <Card className="w-[300px] h-fit">
       <CardHeader><CardTitle>New todo</CardTitle></CardHeader>
       <CardContent>
         <form action={newTodo} className="flex flex-col space-y-2">

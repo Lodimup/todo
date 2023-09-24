@@ -6,7 +6,7 @@ export default function Page() {
     <div
       className="min-h-screen min-w-screen flex justify-center bg-gray-100 p-4"
     >
-      <div className="flex space-x-2">
+      <div className="flex flex-col md:flex-row">
         <NewTodoCard />
         <TodoCards />
       </div>

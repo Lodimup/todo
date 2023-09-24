@@ -8,7 +8,7 @@ export const TodoCards = async () => {
     .sort({ created: -1 })
     .toArray()
   return (
-    <div className="flex flex-col space-y-2 w-[400px]">
+    <div className="flex flex-col w-[300px]">
       {todos.map((todo) => (
         <TodoCard
           key={todo._id.toString()}
