@@ -1,10 +1,13 @@
 import { getDb } from "@/lib/db"
 import { TodoCard } from "@/components/cards/todo-card"
+import { getServerSession } from "next-auth"
 
 export const TodoCards = async () => {
+  const session = await getServerSession()
   const db = await getDb()
+  const filter = session ? {done: false, user: session.user!.name} : { done: false, user: null }
   const todos = await db.collection("todos")
-    .find({ done: false })
+    .find(filter)
     .sort({ created: -1 })
     .toArray()
   return (
